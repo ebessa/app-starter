@@ -1,0 +1,36 @@
+// Função SASS que imprime chamadas de font-family
+//
+// @author Erick Bessa
+//
+// Uso: $fontsList: (
+//   ('raleway-bold-webfont', relaway, bold, normal),
+//   ('raleway-light-webfont', relaway, normal, normal),
+// )
+//
+// Variables:
+// $fontsList  - variável padrão pela qual a função é inicializada
+// $fileName   - nome do arquivo, conforme está na pasta fonts
+// $fontName   - nome que será usado nas declarações css
+// $fontWeight - normal/bold/bolder/500/600/900
+// $fontStyle  - normal/italic
+//
+// Ex: - $fontsList: ('raleway-bold-webfont', relaway, bold, normal).
+//
+// Styleguide 1.3
+@each $fontItem in $fontsList {
+
+        $fontFile: nth($fontItem, 1);
+        $fontName: nth($fontItem, 2);
+
+        @font-face {
+            font-family: '#{$fontName}';
+            src: url('../fonts/#{$fontFile}.eot');
+            src: url('../fonts/#{$fontFile}.eot?#iefix') format('embedded-opentype'),
+                 url('../fonts/#{$fontFile}.woff') format('woff'),
+                 url('../fonts/#{$fontFile}.ttf') format('truetype'),
+                 url('../fonts/#{$fontFile}.svg#iefix') format('svg');
+            font-weight: nth($fontItem, 3);
+            font-style: nth($fontItem, 4);
+        }
+
+}
