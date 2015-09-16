@@ -1,14 +1,14 @@
 {
-  "name": "",
+  "name": "App Starter",
   "version": "0.0.0",
-  "description": "Micro exemplo de loja virtual",
+  "description": "Gulp Powered",
   "engines": {
     "node": "0.10.36",
     "npm": "2.3.0"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/greypants/gulp-starter.git"
+    "url": "git://github.com:ebessa/app-starter.git"
   },
   "scripts": {
     "test": "gulp build:production"
@@ -34,13 +34,13 @@
     "gulp-shell": "^0.4.1",
     "gulp-sizereport": "^1.0.2",
     "gulp-sourcemaps": "^1.2.8",
-    "gulp-swig": "^0.7.4",
     "gulp-uglify": "^1.0.2",
     "gulp-util": "^3.0.0",
     "gulp-watch": "^4.1.1",
+    "gulp.spritesmith": "^4.1.0",
     "jshint-stylish": "^2.0.0",
     "lodash": "^3.5.0",
-    "merge-stream": "^0.1.7",
+    "merge-stream": "^0.1.8",
     "object-assign": "^2.0.0",
     "pretty-hrtime": "~0.2.1",
     "require-dir": "^0.1.0",
