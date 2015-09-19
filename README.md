@@ -16,5 +16,5 @@ No terminal, tenha certeza de estar dentro da pasta raiz do projeto e execute os
   - gera todos os arquivos assets dentro da pasta /public/ e roda um servidor local usando browser-sync
 
 ## Frameworks e Bibliotecas JS
-* [jQuery](http://jquery.com/)
-* [magnific popup](http://dimsemenov.com/plugins/magnific-popup/)
+* [AngularJs](https://angularjs.org/)
+* [angular-ui-router](https://github.com/angular-ui/ui-router)
