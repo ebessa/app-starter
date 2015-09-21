@@ -2,7 +2,8 @@ var config = require('./')
 
 module.exports = {
   src: [
-    config.sourceAssets + '/js/*'
+    config.sourceDirectory + '/angular/app.js',
+    config.sourceDirectory + '/angular/**/*.js'
   ],
-  dest: config.publicAssets + '/js'
+  dest: config.publicAssets + '/js/angular'
 }
